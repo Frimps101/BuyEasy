@@ -10,20 +10,21 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.5.18",
     "@hookform/resolvers": "^5.2.1",
     "lucide-react": "^0.535.0",
-    "next": "15.4.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "^15.5.20",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-hook-form": "^7.61.1",
     "react-toastify": "^11.0.5",
     "zod": "^4.0.14",
     "zustand": "^5.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@repo/eslint-config": "file:../../packages/eslint-config",
     "@repo/typescript-config": "file:../../packages/typescript-config",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
