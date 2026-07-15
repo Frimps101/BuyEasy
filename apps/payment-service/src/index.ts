@@ -7,6 +7,15 @@ app.get('/', (c) => {
   return c.text('Payment endpoint is working')
 })
 
+app.get('/health', (c) => {
+  return c.json({ 
+    status: 'OK', 
+    message: 'Payment endpoint is working',
+    uptime: process.uptime(),
+    timestamp: Date.now()
+  })
+})
+
 const start = async () => {
   try{
     serve({

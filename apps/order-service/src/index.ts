@@ -7,6 +7,16 @@ fastify.get("/", (request, reply) => {
     reply.send("Order endpoint is working")
 })
 
+fastify.get('/health', (request, reply) => {
+  return reply.status(200).send({ 
+    status: 'OK', 
+    message: 'Payment endpoint is working',
+    uptime: process.uptime(),
+    timestamp: Date.now()
+  })
+})
+
+
 const start = async () => {
     try{
         await fastify.listen({ port: 8001 })
