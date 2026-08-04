@@ -12,6 +12,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@clerk/fastify": "^3.1.58",
     "@repo/typescript-config": "file:../../packages/typescript-config",
     "fastify": "^5.10.0"
   },
