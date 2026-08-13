@@ -9,9 +9,16 @@
         "studio": "prisma studio"
     },
     "dependencies": {
-        "@prisma/client": "^7.9.1"
+        "@prisma/adapter-pg": "^7.9.1",
+        "@prisma/client": "^7.9.1",
+        "pg": "^8.23.0"
     },
     "devDependencies": {
+        "@repo/typescript-config": "file:../typescript-config",
+        "@types/node": "^26.2.0",
         "prisma": "^7.9.1"
+    },
+    "exports": {
+        ".": "./src/index.ts"
     }
 }
