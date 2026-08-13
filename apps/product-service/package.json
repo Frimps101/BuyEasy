@@ -13,7 +13,8 @@
   "dependencies": {
     "@clerk/express": "^2.1.47",
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "@repo/product-db": "file:../../packages/product-db"
   },
   "devDependencies": {
     "@repo/typescript-config": "file:../../packages/typescript-config",
